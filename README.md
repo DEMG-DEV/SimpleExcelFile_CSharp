@@ -20,7 +20,7 @@ El projecto se creo en Visual Studio 2017 y se estructura de la siguiente manera
 - README.md
 - SimpleExcelFile.sln
 
-## Información a llenar
+## Ejecución
 Los siguientes datos deben ser llenados para el correcto funcionamiento del codigo.
 
 ### Datos
@@ -31,3 +31,8 @@ Los siguientes datos deben ser llenados para el correcto funcionamiento del codi
 - __*filename*__, nombre del archivo que se adjuntara en el Correo.
 - __*subject*__, Asunto del correo.
 - __*body*__, cuerpo del correo.
+
+Despuesde llenar correctamente los datos se puede proceder a compilr y ejecutar el projecto en las diferentes plataformas soportadas:
+- Windows
+- Linux
+- MacOS
