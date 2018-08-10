@@ -7,7 +7,9 @@ Este reporsitorio sirve para crear un Reporte de Horas en Excel, el siguiente es
 - NET CORE >= 2.1.0
 - ClosedXML >= 0.93.1
 
-## Estructura del Proyecto
+## Estructura
+El projecto se creo en Visual Studio 2017 y se estructura de la siguiente manera:
+
 - SimpleExcelFile_CSharp
     - Program.cs
     - Email.cs
