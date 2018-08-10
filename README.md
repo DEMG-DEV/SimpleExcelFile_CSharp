@@ -3,6 +3,10 @@ Este reporsitorio sirve para crear un Reporte de Horas en Excel, el siguiente es
 
 ![alt-image](https://i.imgur.com/ggr6Rbl.png "Reporte de Horas")
 
+## Requisitos
+- NET CORE >= 2.1.0
+- ClosedXML >= 0.93.1
+
 ## Información a llenar
 Los siguientes datos deben ser llenados para el correcto funcionamiento del codigo.
 
