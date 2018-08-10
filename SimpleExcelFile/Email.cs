@@ -29,7 +29,6 @@ namespace SimpleExcelFile
             try
             {
                 var fromAddress = new MailAddress(_fromEmail, _fromName);
-                var toAddress = new MailAddress(_toEmail);
 
                 var smtp = new SmtpClient
                 {
@@ -40,16 +39,14 @@ namespace SimpleExcelFile
                     UseDefaultCredentials = false,
                     Credentials = new NetworkCredential(fromAddress.Address, _password)
                 };
-                using (var message = new MailMessage(fromAddress, toAddress)
-                {
-                    Subject = _subject,
-                    Body = _body
-                })
-                {
-                    Attachment _attach = new Attachment(_filename);
-                    message.Attachments.Add(_attach);
-                    smtp.Send(message);
-                }
+                var message = new MailMessage();
+                message.From = fromAddress;
+                message.Subject = _subject;
+                message.Body = _body;
+                message.To.Add(_toEmail);
+                Attachment _attach = new Attachment(_filename);
+                message.Attachments.Add(_attach);
+                smtp.Send(message);
             }
             catch (Exception ex)
             {
